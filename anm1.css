@@ -1,0 +1,40 @@
+
+div{
+    width: 100%;
+    height: 50px;
+    margin: 10px;
+    background-color: lightgreen;
+    position: relative;
+    animation-name: movement;
+    animation-duration: 10s;
+    animation-iteration-count: 3;
+
+}
+
+#div1{
+    animation-timing-function: linear;
+}
+#div2{
+    animation-timing-function: ease;
+}
+#div3{
+    animation-timing-function: ease-in;
+}
+#div4{
+    animation-timing-function: ease-out;
+}
+#div5{
+    animation-timing-function: ease-in-out;
+}
+#div6{
+    animation-timing-function: cubic-bezier(.04,.96,.74,.99);
+}
+
+@keyframes movement{
+    from {
+        width: 0px;
+    }
+    to{
+        width: 100%;
+    }
+}
